@@ -14,6 +14,7 @@ import { Lighting }
 
 import { OrbitControls }
     from 'three/examples/jsm/controls/OrbitControls.js';
+import {FPSMonitor} from "../ui/FPSMonitor.ts";
 
 export class Application {
 
@@ -28,6 +29,10 @@ export class Application {
 
     private controls:
         OrbitControls;
+
+    private fps=new FPSMonitor();
+
+    private clock=new THREE.Clock();
 
     constructor() {
 
@@ -79,10 +84,15 @@ export class Application {
     }
 
     private animate = (): void => {
+        this.fps.stats.begin();
+
+        const delta=this.clock.getDelta();
 
         requestAnimationFrame(
             this.animate
         );
+
+
 
         this.controls.update();
 
@@ -90,6 +100,8 @@ export class Application {
             this.sceneManager.scene,
             this.cameraController.camera
         );
+
+        this.fps.stats.end();
     };
 
     private onResize(): void {
