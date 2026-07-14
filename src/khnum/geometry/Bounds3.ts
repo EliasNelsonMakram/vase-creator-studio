@@ -10,6 +10,18 @@ export class Bounds3 {
         public readonly max: Vector3
     ) {}
 
+    public empty() {
+
+    }
+
+    public isEmpty(){
+        return (
+            this.min.x > this.max.x ||
+            this.min.y > this.max.y ||
+            this.min.z > this.max.z
+        );
+    }
+
     public get width(): number {
         return this.max.x - this.min.x;
     }

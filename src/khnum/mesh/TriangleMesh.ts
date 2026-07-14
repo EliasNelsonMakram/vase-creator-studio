@@ -1,5 +1,5 @@
 import { Vector2, Vector3 } from "@/khnum/math";
-import { Bounds3 } from "./Bounds3";
+import { Bounds3 } from "../geometry/Bounds3";
 import { Triangle } from "./Triangle";
 
 /**
