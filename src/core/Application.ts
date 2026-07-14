@@ -14,7 +14,7 @@ import { Lighting }
 
 import { OrbitControls }
     from 'three/examples/jsm/controls/OrbitControls.js';
-import {FPSMonitor} from "../ui/FPSMonitor.ts";
+import {FPSMonitor} from "@/ui/FPSMonitor";
 
 export class Application {
 
