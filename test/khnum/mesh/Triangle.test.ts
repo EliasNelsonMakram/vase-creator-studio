@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { Triangle } from "@/khnum/mesh";
+import { Triangle } from "@/khnum";
 
 describe("Triangle", () => {
     it("creates a valid triangle", () => {

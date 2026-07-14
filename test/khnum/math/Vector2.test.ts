@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { Vector2 } from "@/khnum/math";
+import { Vector2 } from "@/khnum";
 
 describe("Vector2", () => {
 
