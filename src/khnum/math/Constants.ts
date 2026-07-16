@@ -1,4 +1,12 @@
 /**
+ * Khnum Engine
+ *
+ * Copyright (c) 2026 Elias Nelson Makram
+ *
+ * Licensed under the MIT License.
+ */
+
+/**
  * Mathematical constants used throughout the Khnum Engine.
  */
 

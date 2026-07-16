@@ -1,3 +1,11 @@
+/**
+ * Khnum Engine
+ *
+ * Copyright (c) 2026 Elias Nelson Makram
+ *
+ * Licensed under the MIT License.
+ */
+
 import { DEG_TO_RAD, EPSILON, RAD_TO_DEG } from "./Constants";
 
 /**

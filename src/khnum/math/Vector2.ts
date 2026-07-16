@@ -1,4 +1,12 @@
 /**
+ * Khnum Engine
+ *
+ * Copyright (c) 2026 Elias Nelson Makram
+ *
+ * Licensed under the MIT License.
+ */
+
+/**
  * Immutable two-dimensional vector.
  */
 
@@ -9,12 +17,9 @@ export class Vector2 {
     public static readonly ONE = new Vector2(1, 1);
 
     constructor(
-
         public readonly x: number,
-
         public readonly y: number
-
-    ) {}
+    ) {Object.freeze(this);}
 
     public add(other: Vector2): Vector2 {
 

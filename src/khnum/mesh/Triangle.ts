@@ -1,4 +1,13 @@
 /**
+ * Khnum Engine
+ *
+ * Copyright (c) 2026 Elias Nelson Makram
+ *
+ * Licensed under the MIT License.
+ */
+
+
+/**
  * Represents an immutable triangle by indexing three vertices
  * in a TriangleMesh.
  *
